@@ -14,8 +14,8 @@
 		<to name="MGO240"/>
 	</Bind>
 	<Firearm name="MG_762R_HU" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="4" unlockCostBH="4"
-			tooltip="@firearm_mg338_name"
-			description="@firearm_mg338_desc"
+			tooltip="@firearm_mg762r_name"
+			description="@firearm_mg762r_desc"
 			img="data/models/weapons/mg338_ui.dds"
 
 			animationSet="rifle"
@@ -77,7 +77,7 @@
 			<Unequip name="rifle_neqp"/>
 			<Reload name="rifle_reld"/>
 			<ReloadEmpty name="rifle_reldempt"/>
-			<Fire name="mg338_fire"/>
+			<Fire name="pkm_fire"/>
 			<ShellDrop name="rifle_shell_drop"/>
 			<Empty name="gen_empty"/>
 		</Sounds>
@@ -96,8 +96,8 @@
 		<to name="MGO240"/>
 	</Bind>
 	<Firearm name="MG_12GA_HU" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="4" unlockCostBH="4"
-			tooltip="@firearm_mg338_name"
-			description="@firearm_mg338_desc"
+			tooltip="@firearm_mg12ga_name"
+			description="@firearm_mg12ga_desc"
 			img="data/models/weapons/mg338_ui.dds"
 
 			animationSet="rifle"
@@ -124,34 +124,33 @@
 			accuracyStartDist="20"
 			accuracyEndDist="100"
 
-			suppressionScale="1.5"
+			suppressionScale="0.15"
 		/>
 
 		<Params
 			caliberInfoText="@firearm_caliber_12gauge_name"
 			operationInfoText="@firearm_operation_fullauto_name"
-			ejectingShellEntity="BulletCasingLarge"
+			ejectingShellEntity="BulletCasingShotgun"
 			magazineEntity="m240l_mag"
 			ai_rangeMin="6.0"
 			ai_rangeOptimal="35.0"
 			ai_rangeMax="100.0"
-			ai_stopWhenShooting="true"
+			ai_stopWhenShooting="false"
 			hasLaser="true"
 		/>
 
 		<AttackTypes>
-			<AttackType name="Rangers_GPMGStrafeShort" inCoverOverride="Rangers_LMGStrafeShortMounted" rangeMeters="3"/>
-			<AttackType name="Rangers_GPMGStrafe" inCoverOverride="Rangers_LMGStrafeMounted" rangeMeters="7"/>
-			<AttackType name="Rangers_GPMGStrafeMed" inCoverOverride="Rangers_LMGStrafeMedMounted" rangeMeters="25"/>
-			<AttackType name="Rangers_GPMGStrafeLong" inCoverOverride="Rangers_LMGStrafeLongMounted" rangeMeters="60"/>
-			<AttackType name="Rangers_GPMGStrafeLongXX" inCoverOverride="Rangers_LMGStrafeLongXXMounted" rangeMeters="9999"/>
+			<AttackType name="Rangers_SAShotAimedFire" rangeMeters="7"/>
+			<AttackType name="Rangers_SAShotAimedFireLong" rangeMeters="14"/>
+			<AttackType name="Rangers_SAShotAimedFireLongXX" rangeMeters="9999"/> <!-- pintea: was 100, but to avoid errors changed it to infinite. It's a temp fix, will need to feedback the player properly if the weapon can't shoot -->
 		</AttackTypes>
 
-		<MuzzleFlash lightTemplate="ShotLightLarge" tracerTemplate="Tracer_LMG">
-			<Flare particles="FX_MUZZLE_FLASH_LMG_01" />
-			<Flare particles="FX_MUZZLE_FLASH_LMG_02" />
-			<Flare particles="FX_MUZZLE_FLASH_LMG_03" />
-			<Flare particles="FX_MUZZLE_FLASH_LMG_04" />
+
+		<MuzzleFlash lightTemplate="ShotLightLarge" tracerTemplate="Tracer_Rifle">
+			<Flare particles="FX_MUZZLE_FLASH_SHOTGUN_01" />
+			<Flare particles="FX_MUZZLE_FLASH_SHOTGUN_02" />
+			<Flare particles="FX_MUZZLE_FLASH_SHOTGUN_03" />
+			<Flare particles="FX_MUZZLE_FLASH_SHOTGUN_04" />
 		</MuzzleFlash>
 
 		<Sounds> <!-- max 4 variants for each action -->
@@ -159,7 +158,7 @@
 			<Unequip name="rifle_neqp"/>
 			<Reload name="rifle_reld"/>
 			<ReloadEmpty name="rifle_reldempt"/>
-			<Fire name="mg338_fire"/>
+			<Fire name="m1014_fire"/>
 			<ShellDrop name="rifle_shell_drop"/>
 			<Empty name="gen_empty"/>
 		</Sounds>
@@ -176,8 +175,8 @@
 		<to name="PSO1"/>
 	</Bind>
 	<Firearm name="PKP_338_HU" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="8"
-			tooltip="@firearm_pkpmgcia_name"
-			description="@firearm_pkpmg_desc"
+			tooltip="@firearm_pkp338_name"
+			description="@firearm_pkp338_desc"
 			img="data/models/weapons/pkp_ui.dds"
 
 			animationSet="rifle"

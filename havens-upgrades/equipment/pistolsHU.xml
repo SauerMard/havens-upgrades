@@ -1,6 +1,6 @@
 <Equipment>
 
-<Bind eqp="G21 Pistol GP">
+<Bind eqp="G21 Pistol HU">
 		<to name="CIA"/>
 		<to name="Rangers"/>
 
@@ -10,7 +10,7 @@
 
 		<to name="IronSights_Pistol"/>
 	</Bind>
-	<Firearm name="G21 Pistol GP" inventoryBinding="SecondaryWeapon" category="pistol" unlockCost="2"
+	<Firearm name="G21 Pistol HU" inventoryBinding="SecondaryWeapon" category="pistol" unlockCost="2"
 			tooltip="@glock21_name"
 			description="@glock21_desc"
 			img="data/models/weapons/g22_ui.dds"
@@ -77,14 +77,14 @@
 		</Sounds>
 	</Firearm>
 
-    <Bind eqp="G44 Pistol GP">
+    <Bind eqp="G44 Pistol HU">
 		<to name="CIA"/>
 
-		<to name="22LR_GP"/>
+		<to name="22LR_HU"/>
 
 		<to name="IronSights_Pistol"/>
 	</Bind>
-	<Firearm name="G44 Pistol GP" inventoryBinding="SecondaryWeapon" category="pistol" unlockCost="2"
+	<Firearm name="G44 Pistol HU" inventoryBinding="SecondaryWeapon" category="pistol" unlockCost="2"
 			tooltip="@glock44_name"
 			description="@glock44_desc"
 			img="data/models/weapons/g19_ui.dds"
@@ -151,7 +151,7 @@
 		</Sounds>
 	</Firearm>
 
-    <Bind eqp="G18 Pistol GP">
+    <Bind eqp="G18 Pistol HU">
 		<to name="CIA"/>
 		<to name="Rangers"/>
 
@@ -161,7 +161,7 @@
 
 		<to name="IronSights_Pistol"/>
 	</Bind>
-	<Firearm name="G18 Pistol GP" inventoryBinding="SecondaryWeapon" category="pistol" unlockCost="2"
+	<Firearm name="G18 Pistol HU" inventoryBinding="SecondaryWeapon" category="pistol" unlockCost="2"
 			tooltip="@glock18_name"
 			description="@glock18_desc"
 			img="data/models/weapons/g22_ui.dds"

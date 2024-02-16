@@ -1,7 +1,7 @@
 <Equipment>
-    <Ammo name="22LR_GP"
-			tooltip="@ammo_22LRGP_name"
-			description="@ammo_22LRGP_desc"
+    <Ammo name="22LR_HU"
+			tooltip="@ammo_22LRHU_name"
+			description="@ammo_22LRHU_desc"
 			img="data/models/weapons/attachments/m1911fmj_ammo_ui.dds"
 		>
 
@@ -15,4 +15,5 @@
 			<ArmorPenetration start="1" end="1" startDist="0" endDist="100"/>
 		</Params>
     </Ammo>
+
 </Equipment>

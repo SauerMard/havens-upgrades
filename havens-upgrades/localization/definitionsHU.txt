@@ -8,5 +8,11 @@
 @m93r_desc=An iteration of your regular Beretta 92, capable of three round burst fire at 1100 rounds per minute.
 @glock21auto_name=G21 Autopistol
 @glock21auto_desc=.45 ACP at 1200 rounds per minute. I hope you can grip your gun well.
-@ammo_22LRGP_name=SG 40gr FMJ
-@ammo_22LRGP_desc=Standard .22LR small game round, 40 grain FMJ
+@ammo_22LRHU_name=SG 40gr FMJ
+@ammo_22LRHU_desc=Standard .22LR small game round, 40 grain FMJ
+@firearm_mg12ga_name=MG-12GA
+@firearm_mg12ga_desc=50 shell belt of 12 gauge buckshot. If you think this is a great weapon for CQB, perhaps the weight and length of the weapon will change your mind.
+@firearm_mg762r_name=MG762R
+@firearm_mg762r_desc=Some insane person decided to rechamber our M338s into 7.62x54mmR. Don't ask how, don't ask why. Just enjoy the ammo parity.
+@firearm_pkp338_name=PKP-338
+@firearm_pkp338_desc=SAD decided to rechamber some of it's "legally acquired" Pechenegs into .338 Norma Magnum. How much does it help? I'unno.
