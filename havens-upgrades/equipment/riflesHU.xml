@@ -1,6 +1,171 @@
 <Equipment>
 
-<Bind eqp="PKP 338">
+<Bind eqp="MG_762R_HU">
+		<to name="Support"/>
+
+		<to name="762R57N323_PKPCIA"/>
+		<to name="762RAP7N13_PKPCIA"/>
+
+		<to name="IronSights"/>
+		<to name="M68CCO"/>
+		<to name="Holosight"/>
+		<to name="SpecterDR"/>
+		<to name="MGOM145"/>
+		<to name="MGO240"/>
+	</Bind>
+	<Firearm name="MG_762R_HU" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="4" unlockCostBH="4"
+			tooltip="@firearm_mg338_name"
+			description="@firearm_mg338_desc"
+			img="data/models/weapons/mg338_ui.dds"
+
+			animationSet="rifle"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="-17" turnSpeedModifierPercent="-10"/>
+		<RenderObject3D model="data/models/weapons/mg338.khm" attachSlot="prop_back_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/mg338.dds"/>
+
+		<ModifiableParams
+			numPellets="1"
+			roundsPerMagazine="50"
+			closedBolt="0"
+			suppressArea="1"
+
+			cyclicReload="0"
+			reloadTime="4000"
+			reloadEmptyTime="4000"
+			changeInTime="1200"
+			changeOutTime="1300"
+			readyTime="700"
+			guardTime="400"
+
+			accuracyStart="145"
+			accuracyEnd="70"
+			accuracyStartDist="20"
+			accuracyEndDist="100"
+
+			suppressionScale="1.5"
+		/>
+
+		<Params
+			caliberInfoText="@firearm_caliber_762x54_name"
+			operationInfoText="@firearm_operation_fullauto_name"
+			ejectingShellEntity="BulletCasingLarge"
+			magazineEntity="m240l_mag"
+			ai_rangeMin="6.0"
+			ai_rangeOptimal="35.0"
+			ai_rangeMax="100.0"
+			ai_stopWhenShooting="true"
+			hasLaser="true"
+		/>
+
+		<AttackTypes>
+			<AttackType name="Rangers_GPMGStrafeShort" inCoverOverride="Rangers_LMGStrafeShortMounted" rangeMeters="3"/>
+			<AttackType name="Rangers_GPMGStrafe" inCoverOverride="Rangers_LMGStrafeMounted" rangeMeters="7"/>
+			<AttackType name="Rangers_GPMGStrafeMed" inCoverOverride="Rangers_LMGStrafeMedMounted" rangeMeters="25"/>
+			<AttackType name="Rangers_GPMGStrafeLong" inCoverOverride="Rangers_LMGStrafeLongMounted" rangeMeters="60"/>
+			<AttackType name="Rangers_GPMGStrafeLongXX" inCoverOverride="Rangers_LMGStrafeLongXXMounted" rangeMeters="9999"/>
+		</AttackTypes>
+
+		<MuzzleFlash lightTemplate="ShotLightLarge" tracerTemplate="Tracer_LMG">
+			<Flare particles="FX_MUZZLE_FLASH_LMG_01" />
+			<Flare particles="FX_MUZZLE_FLASH_LMG_02" />
+			<Flare particles="FX_MUZZLE_FLASH_LMG_03" />
+			<Flare particles="FX_MUZZLE_FLASH_LMG_04" />
+		</MuzzleFlash>
+
+		<Sounds> <!-- max 4 variants for each action -->
+			<Equip name="rifle_eqp"/>
+			<Unequip name="rifle_neqp"/>
+			<Reload name="rifle_reld"/>
+			<ReloadEmpty name="rifle_reldempt"/>
+			<Fire name="mg338_fire"/>
+			<ShellDrop name="rifle_shell_drop"/>
+			<Empty name="gen_empty"/>
+		</Sounds>
+	</Firearm>
+
+<Bind eqp="MG_12GA_HU">
+		<to name="Support"/>
+
+		<to name="12GA00BUCK_M1014"/>
+
+		<to name="IronSights"/>
+		<to name="M68CCO"/>
+		<to name="Holosight"/>
+		<to name="SpecterDR"/>
+		<to name="MGOM145"/>
+		<to name="MGO240"/>
+	</Bind>
+	<Firearm name="MG_12GA_HU" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="4" unlockCostBH="4"
+			tooltip="@firearm_mg338_name"
+			description="@firearm_mg338_desc"
+			img="data/models/weapons/mg338_ui.dds"
+
+			animationSet="rifle"
+		>
+		<MobilityModifiers moveSpeedModifierPercent="-17" turnSpeedModifierPercent="-10"/>
+		<RenderObject3D model="data/models/weapons/mg338.khm" attachSlot="prop_back_rifle" skipGOSSAO="true" diffuseTex="data/models/weapons/mg338.dds"/>
+
+		<ModifiableParams
+			numPellets="9"
+			roundsPerMagazine="50"
+			closedBolt="0"
+			suppressArea="1"
+
+			cyclicReload="0"
+			reloadTime="4000"
+			reloadEmptyTime="4000"
+			changeInTime="1200"
+			changeOutTime="1300"
+			readyTime="700"
+			guardTime="400"
+
+			accuracyStart="145"
+			accuracyEnd="70"
+			accuracyStartDist="20"
+			accuracyEndDist="100"
+
+			suppressionScale="1.5"
+		/>
+
+		<Params
+			caliberInfoText="@firearm_caliber_12gauge_name"
+			operationInfoText="@firearm_operation_fullauto_name"
+			ejectingShellEntity="BulletCasingLarge"
+			magazineEntity="m240l_mag"
+			ai_rangeMin="6.0"
+			ai_rangeOptimal="35.0"
+			ai_rangeMax="100.0"
+			ai_stopWhenShooting="true"
+			hasLaser="true"
+		/>
+
+		<AttackTypes>
+			<AttackType name="Rangers_GPMGStrafeShort" inCoverOverride="Rangers_LMGStrafeShortMounted" rangeMeters="3"/>
+			<AttackType name="Rangers_GPMGStrafe" inCoverOverride="Rangers_LMGStrafeMounted" rangeMeters="7"/>
+			<AttackType name="Rangers_GPMGStrafeMed" inCoverOverride="Rangers_LMGStrafeMedMounted" rangeMeters="25"/>
+			<AttackType name="Rangers_GPMGStrafeLong" inCoverOverride="Rangers_LMGStrafeLongMounted" rangeMeters="60"/>
+			<AttackType name="Rangers_GPMGStrafeLongXX" inCoverOverride="Rangers_LMGStrafeLongXXMounted" rangeMeters="9999"/>
+		</AttackTypes>
+
+		<MuzzleFlash lightTemplate="ShotLightLarge" tracerTemplate="Tracer_LMG">
+			<Flare particles="FX_MUZZLE_FLASH_LMG_01" />
+			<Flare particles="FX_MUZZLE_FLASH_LMG_02" />
+			<Flare particles="FX_MUZZLE_FLASH_LMG_03" />
+			<Flare particles="FX_MUZZLE_FLASH_LMG_04" />
+		</MuzzleFlash>
+
+		<Sounds> <!-- max 4 variants for each action -->
+			<Equip name="rifle_eqp"/>
+			<Unequip name="rifle_neqp"/>
+			<Reload name="rifle_reld"/>
+			<ReloadEmpty name="rifle_reldempt"/>
+			<Fire name="mg338_fire"/>
+			<ShellDrop name="rifle_shell_drop"/>
+			<Empty name="gen_empty"/>
+		</Sounds>
+	</Firearm>
+
+<Bind eqp="PKP_338_HU">
 		<to name="BlackOps"/>
 
 		<to name="338FMJ_MG338"/>
@@ -10,7 +175,7 @@
 		<to name="PO 35"/>
 		<to name="PSO1"/>
 	</Bind>
-	<Firearm name="PKP 338" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="8"
+	<Firearm name="PKP_338_HU" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="8"
 			tooltip="@firearm_pkpmgcia_name"
 			description="@firearm_pkpmg_desc"
 			img="data/models/weapons/pkp_ui.dds"
