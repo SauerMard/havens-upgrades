@@ -23,3 +23,5 @@
 @upgd_slap_charge_desc=Fast-adhesion slap charge, assists in high speed entry.
 @upgd_slap_charge_kit_name=3x Fast Slap
 @upgd_slap_charge_kit_desc=3x fast-adhesion slap charges, for when you *really* have to get inside fast.
+@mp5ubgl_HU_name=MP5A5/UBGL
+@mp5ubgl_HU_desc=MY. ASS. IS. HEAVY.
