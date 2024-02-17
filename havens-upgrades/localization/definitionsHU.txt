@@ -16,3 +16,10 @@
 @firearm_mg762r_desc=Some insane person decided to rechamber our M338s into 7.62x54mmR. Don't ask how, don't ask why. Just enjoy the ammo parity.
 @firearm_pkp338_name=PKP-338
 @firearm_pkp338_desc=SAD decided to rechamber some of it's "legally acquired" Pechenegs into .338 Norma Magnum. How much does it help? I'unno.
+@HU_ninefrag_name=2x Ninefrag
+@HU_ninefrag_desc=Our engineers managed to shove nine M67 frags into an M67 body. Don't ask how, just know that it's unpredictable.
+@HU_ninefrag_kit_name=3x Ninefrag
+@upgd_slap_charge_name=1x Fast Slap
+@upgd_slap_charge_desc=Fast-adhesion slap charge, assists in high speed entry.
+@upgd_slap_charge_kit_name=3x Fast Slap
+@upgd_slap_charge_kit_desc=3x fast-adhesion slap charges, for when you *really* have to get inside fast.
