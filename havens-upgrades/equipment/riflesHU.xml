@@ -259,8 +259,8 @@
 	</Bind>
 
 	<Firearm name="MP5A5UBGL" inventoryBinding="PrimaryWeapon" category="rifle" unlockCost="4"
-			tooltip="MP5A5/UBGL"
-			description="@firearm_mp5a_desc"
+			tooltip="@mp5ubgl_HU_name"
+			description="@mp5ubgl_HU_desc"
 			img="data/models/weapons/mp5a3_ui.dds"
 
 			animationSet="rifle"

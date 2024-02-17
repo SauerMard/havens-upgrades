@@ -25,12 +25,21 @@
 
 	<wp
 		type="THROW_GRENADE"
-		equipment="Clusterfrag_GP"
+		equipment="Clusterfrag_HU"
 		ui_prefix="data/textures/gui_ingame/waypoints/frag"
 		ttip="@menu_game_fg_ttip"
 		ttip_disabled="@menu_generic_cannot_use"
 		ttip_empty="@menu_game_fg_none_ttip"/>
-	    <wp
+
+	<wp
+		type="THROW_GRENADE"
+		equipment="Clusterfrag_kit_HU"
+		ui_prefix="data/textures/gui_ingame/waypoints/frag"
+		ttip="@menu_game_fg_ttip"
+		ttip_disabled="@menu_generic_cannot_use"
+		ttip_empty="@menu_game_fg_none_ttip"/>
+
+	<wp
 		type="PLANT_EXPLOSIVES"
 		equipment="Slap Charge UPGD"
 		ui_prefix="data/textures/gui_ingame/waypoints/charge_slap"
