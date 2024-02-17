@@ -140,9 +140,11 @@
 		/>
 
 		<AttackTypes>
-			<AttackType name="Rangers_SAShotAimedFire" rangeMeters="7"/>
-			<AttackType name="Rangers_SAShotAimedFireLong" rangeMeters="14"/>
-			<AttackType name="Rangers_SAShotAimedFireLongXX" rangeMeters="9999"/> <!-- pintea: was 100, but to avoid errors changed it to infinite. It's a temp fix, will need to feedback the player properly if the weapon can't shoot -->
+			<AttackType name="Rangers_GPMGStrafeShort" inCoverOverride="Rangers_LMGStrafeShortMounted" rangeMeters="3"/>
+			<AttackType name="Rangers_GPMGStrafe" inCoverOverride="Rangers_LMGStrafeMounted" rangeMeters="7"/>
+			<AttackType name="Rangers_GPMGStrafeMed" inCoverOverride="Rangers_LMGStrafeMedMounted" rangeMeters="25"/>
+			<AttackType name="Rangers_GPMGStrafeLong" inCoverOverride="Rangers_LMGStrafeLongMounted" rangeMeters="60"/>
+			<AttackType name="Rangers_GPMGStrafeLongXX" inCoverOverride="Rangers_LMGStrafeLongXXMounted" rangeMeters="9999"/>
 		</AttackTypes>
 
 
@@ -360,8 +362,6 @@
 				deleteAfterMS3="35000"
 				anim2D="">
 			</FX>
-
-			<Shrapnel projectileSource="Frag Grenade Single" min="4" max="4" spreadRadius="6.0" />
 
 			<EffectRange radiusMeters="1.7">
 				<StunEffect chancePercent="100" innerRangeTimeMSec="1500" outerRangeTimeMSec="1500"/>
