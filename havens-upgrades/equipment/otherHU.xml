@@ -492,4 +492,216 @@
 		</Projectile>
 	</Grenade>
 
+	<Bind eqp="Ninebanger_HU">
+		<to name="Rangers"/>
+		<to name="CIA"/>
+	</Bind>
+	<Grenade name="Ninebanger_HU" inventoryBinding="UtilityPouch"
+			quantity="2"
+
+			tooltip="@HU_ninebanger_name"
+			description="@HU_ninebanger_desc"
+			img="data/models/equipment/flashbang_ui.dds"
+			movie="data/movies/flashbang.ogv"
+
+			animationSet="grenade"
+			soundUse="grenade_use"
+			soundUseVoice="VOX_GEAR_FLASH"
+		>
+		<RenderObject3D model="data/models/equipment/flashbang.khm" skipGOSSAO="true" diffuseTex="data/models/equipment/flashbang.dds"/>
+		<ConcealmentModifier add="-1"/>
+		<MobilityModifiers moveSpeedModifierPercent="-0.5" turnSpeedModifierPercent="0"/>
+
+		<!--
+		- throwTime is the full time required to throw it, it is split in half between when the hand starts moving and the grenade launches and the recovery
+		- the effectRange Radius contains the previous one, but the effects do not concatenate
+		- explosion time is adjusted automatically depending on the distance to target, but have a minimum explosion time
+		-->
+		<ModifiableParams
+			changeInTime="0"
+			changeOutTime="0"
+			throwTime="1000"
+			throwTimeCorner="1400"
+		/>
+
+		<Projectile
+			bodyTemplate="FlashbangGrenade"
+			pathIconTexture="data/textures/gui/contextual/pathicon_flashbang_active.tga"
+
+			soundExplosion="flash_expl"
+			soundHitFloor="grenade_hit_floor"
+
+			friendlyFire="false"
+			triggerOnImpact="false"
+			triggerTimeAfterTargetHitMsec="200"
+
+			physicsDetonationForce="30"
+			audibleLaunchSoundRadius="0"
+			audibleDetonationSoundRadius="25">
+
+			<!-- burn marks are randomly rotated/scaled for diversity -->
+			<FX
+				particles="Flashbang"
+				entity1="ExplosionLight"
+				entity2="explosion_mark"
+				randRotation2="true"
+				entity3="FX_dust_small"
+				deleteAfterMS3="20000"
+				anim2D="">
+			</FX>
+
+			<Shrapnel projectileSource="ninebanger_shrapnel_HU" min="9" max="9" spreadRadius="1.0" />
+
+			<EffectRange radiusMeters="2">
+				<StunEffect chancePercent="100" innerRangeTimeMSec="3500" outerRangeTimeMSec="3500"/>
+				<DamageEffect chancePercent="100" damage="1" damageType="1"/>
+				<SuppressEffect amount="20"/>
+			</EffectRange>
+
+			<EffectRange radiusMeters="3.5">
+				<StunEffect chancePercent="100" innerRangeTimeMSec="3500" outerRangeTimeMSec="1750"/>
+				<SuppressEffect amount="20"/>
+			</EffectRange>
+		</Projectile>
+	</Grenade>
+
+	<Bind eqp="Ninebanger_kit_HU">
+		<to name="Rangers"/>
+		<to name="BlackOps"/>
+	</Bind>
+	<Grenade name="Ninebanger_kit_HU" inventoryBinding="SupportGear1"
+			quantity="3"
+
+			tooltip="@HU_ninebanger_kit_name"
+			description="@HU_ninebanger_desc"
+			img="data/models/equipment/flashbang_kit_ui.dds"
+			movie="data/movies/flashbang.ogv"
+
+			animationSet="grenade"
+			soundUse="grenade_use"
+			soundUseVoice="VOX_GEAR_FLASH"
+		>
+		<RenderObject3D model="data/models/equipment/flashbang.khm" skipGOSSAO="true" diffuseTex="data/models/equipment/flashbang.dds"/>
+		<ConcealmentModifier add="-2"/>
+		<MobilityModifiers moveSpeedModifierPercent="-1" turnSpeedModifierPercent="0"/>
+
+		<!--
+		- throwTime is the full time required to throw it, it is split in half between when the hand starts moving and the grenade launches and the recovery
+		- the effectRange Radius contains the previous one, but the effects do not concatenate
+		- explosion time is adjusted automatically depending on the distance to target, but have a minimum explosion time
+		-->
+		<ModifiableParams
+			changeInTime="0"
+			changeOutTime="0"
+			throwTime="1000"
+			throwTimeCorner="1400"
+		/>
+
+		<Projectile
+			bodyTemplate="FlashbangGrenade"
+			pathIconTexture="data/textures/gui/contextual/pathicon_flashbang_active.tga"
+
+			soundExplosion="flash_expl"
+			soundHitFloor="grenade_hit_floor"
+
+			friendlyFire="false"
+			triggerOnImpact="false"
+			triggerTimeAfterTargetHitMsec="20"
+
+			physicsDetonationForce="30"
+			audibleLaunchSoundRadius="0"
+			audibleDetonationSoundRadius="25">
+
+			<!-- burn marks are randomly rotated/scaled for diversity -->
+			<FX
+				particles="Flashbang"
+				entity1="ExplosionLight"
+				entity2="explosion_mark"
+				randRotation2="true"
+				entity3="FX_dust_small"
+				deleteAfterMS3="20000"
+				anim2D="">
+			</FX>
+
+			<Shrapnel projectileSource="ninebanger_shrapnel_HU" min="9" max="9" spreadRadius="1.0" />
+
+			<EffectRange radiusMeters="2">
+				<StunEffect chancePercent="100" innerRangeTimeMSec="3500" outerRangeTimeMSec="3500"/>
+				<DamageEffect chancePercent="100" damage="1" damageType="1"/>
+				<SuppressEffect amount="20"/>
+			</EffectRange>
+
+			<EffectRange radiusMeters="3.5">
+				<StunEffect chancePercent="100" innerRangeTimeMSec="3500" outerRangeTimeMSec="1750"/>
+				<SuppressEffect amount="20"/>
+			</EffectRange>
+		</Projectile>
+	</Grenade>
+
+<!--
+	This next one is just something for the ninebangers, not to be bound.
+-->
+
+	<Grenade name="ninebanger_shrapnel_HU" inventoryBinding="UtilityPouch"
+			quantity="2"
+
+			tooltip="@grenade_flashbang_name"
+			description="@grenade_flashbang_desc"
+			img="data/models/equipment/flashbang_ui.dds"
+			movie="data/movies/flashbang.ogv"
+
+			animationSet="grenade"
+			soundUse="grenade_use"
+			soundUseVoice="VOX_GEAR_FLASH"
+		>
+		<RenderObject3D model="data/models/equipment/flashbang.khm" skipGOSSAO="true" diffuseTex="data/models/equipment/flashbang.dds"/>
+		<ConcealmentModifier add="-1"/>
+		<MobilityModifiers moveSpeedModifierPercent="-0.5" turnSpeedModifierPercent="0"/>
+
+		<ModifiableParams
+			changeInTime="0"
+			changeOutTime="0"
+			throwTime="1000"
+			throwTimeCorner="1400"
+		/>
+
+		<Projectile
+			bodyTemplate="FlashbangGrenade"
+			pathIconTexture="data/textures/gui/contextual/pathicon_flashbang_active.tga"
+
+			soundExplosion="flash_expl"
+			soundHitFloor="grenade_hit_floor"
+
+			friendlyFire="false"
+			triggerOnImpact="false"
+			triggerTimeAfterTargetHitMsec="200"
+
+			physicsDetonationForce="30"
+			audibleLaunchSoundRadius="0"
+			audibleDetonationSoundRadius="25">
+
+			<!-- burn marks are randomly rotated/scaled for diversity -->
+			<FX
+				particles="Flashbang"
+				entity1="ExplosionLight"
+				entity2="explosion_mark"
+				randRotation2="true"
+				entity3="FX_dust_small"
+				deleteAfterMS3="20000"
+				anim2D="">
+			</FX>
+
+			<EffectRange radiusMeters="2">
+				<StunEffect chancePercent="100" innerRangeTimeMSec="3500" outerRangeTimeMSec="3500"/>
+				<DamageEffect chancePercent="100" damage="1" damageType="1"/>
+				<SuppressEffect amount="20"/>
+			</EffectRange>
+
+			<EffectRange radiusMeters="3.5">
+				<StunEffect chancePercent="100" innerRangeTimeMSec="3500" outerRangeTimeMSec="1750"/>
+				<SuppressEffect amount="20"/>
+			</EffectRange>
+		</Projectile>
+	</Grenade>
+
 </Equipment>

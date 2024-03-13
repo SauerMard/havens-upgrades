@@ -27,17 +27,33 @@
 		type="THROW_GRENADE"
 		equipment="Clusterfrag_HU"
 		ui_prefix="data/textures/gui_ingame/waypoints/frag"
-		ttip="@menu_game_fg_ttip"
+		ttip="@menu_HU_ninefrag_ttip"
 		ttip_disabled="@menu_generic_cannot_use"
-		ttip_empty="@menu_game_fg_none_ttip"/>
+		ttip_empty="@menu_HU_ninefrag_none_ttip"/>
 
 	<wp
 		type="THROW_GRENADE"
 		equipment="Clusterfrag_kit_HU"
 		ui_prefix="data/textures/gui_ingame/waypoints/frag"
-		ttip="@menu_game_fg_ttip"
+		ttip="@menu_HU_ninefrag_ttip"
 		ttip_disabled="@menu_generic_cannot_use"
-		ttip_empty="@menu_game_fg_none_ttip"/>
+		ttip_empty="@menu_HU_ninefrag_none_ttip"/>
+
+	<wp
+		type="THROW_GRENADE"
+		equipment="Ninebanger_HU"
+		ui_prefix="data/textures/gui_ingame/waypoints/flashbang"
+		ttip="@menu_HU_ninebanger_ttip"
+		ttip_disabled="@menu_generic_cannot_use"
+		ttip_empty="@menu_HU_ninebanger_none_ttip"/>
+
+	<wp
+		type="THROW_GRENADE"
+		equipment="Ninebanger_kit_HU"
+		ui_prefix="data/textures/gui_ingame/waypoints/flashbang"
+		ttip="@menu_HU_ninebanger_ttip"
+		ttip_disabled="@menu_generic_cannot_use"
+		ttip_empty="@menu_HU_ninebanger_none_ttip"/>
 
 	<wp
 		type="PLANT_EXPLOSIVES"

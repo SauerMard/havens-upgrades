@@ -1,27 +1,47 @@
 @glock21_name=G21 Pistol
 @glock21_desc=The classic trend-setter, now in .45 ACP. Boasting a devilish 13 rounds, it's a force to be reckoned with, provided you can handle it.
+
 @glock44_name=G44 Pistol
 @glock44_desc=A training pistol through and through. I have no clue why you'd want this.
+
 @glock18_name=G18 Pistol
 @glock18_desc=The fully automatic (1200 RPM) version of the G17 pistol. Hold it tight and be mindful of your ammo.
+
 @m93r_name=93R Pistol
 @m93r_desc=An iteration of your regular Beretta 92, capable of three round burst fire at 1100 rounds per minute.
+
 @glock21auto_name=G21 Autopistol
 @glock21auto_desc=.45 ACP at 1200 rounds per minute. I hope you can grip your gun well.
+
 @ammo_22LRHU_name=SG 40gr FMJ
 @ammo_22LRHU_desc=Standard .22LR small game round, 40 grain FMJ
+
 @firearm_mg12ga_name=MG-12GA
 @firearm_mg12ga_desc=50 shell belt of 12 gauge buckshot. If you think this is a great weapon for CQB, perhaps the weight and length of the weapon will change your mind.
+
 @firearm_mg762r_name=MG762R
 @firearm_mg762r_desc=Some insane person decided to rechamber our M338s into 7.62x54mmR. Don't ask how, don't ask why. Just enjoy the ammo parity.
+
 @firearm_pkp338_name=PKP-338
 @firearm_pkp338_desc=SAD decided to rechamber some of it's "legally acquired" Pechenegs into .338 Norma Magnum. How much does it help? I'unno.
+
 @HU_ninefrag_name=2x Ninefrag
-@HU_ninefrag_desc=Our engineers managed to shove nine M67 frags into an M67 body. Don't ask how, just know that it's unpredictable.
 @HU_ninefrag_kit_name=3x Ninefrag
+@HU_ninefrag_desc=Our engineers managed to shove nine M67 frags into an M67 body. Don't ask how, just know that it's unpredictable.
+@menu_HU_ninefrag_ttip=Throw ninefrag
+@menu_HU_ninefrag_none_ttip=Out of ninefrags
+
 @upgd_slap_charge_name=1x Fast Slap
 @upgd_slap_charge_desc=Fast-adhesion slap charge, assists in high speed entry.
+
 @upgd_slap_charge_kit_name=3x Fast Slap
 @upgd_slap_charge_kit_desc=3x fast-adhesion slap charges, for when you *really* have to get inside fast.
+
 @mp5ubgl_HU_name=MP5A5/UBGL
 @mp5ubgl_HU_desc=MY. ASS. IS. HEAVY.
+
+@HU_ninebanger_name=2x Ninebanger
+@HU_ninebanger_kit_name=3x Ninebanger
+@HU_ninebanger_desc=Nine flashbangs in the body of one. Unparalleled suppression. Just make sure to wear ear protection.
+@menu_HU_ninebanger_ttip=Throw ninebanger
+@menu_HU_ninebanger_none_ttip=Out of ninebangers

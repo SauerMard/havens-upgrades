@@ -17,7 +17,6 @@
 		>
 		<MobilityModifiers moveSpeedModifierPercent="-2" turnSpeedModifierPercent="0"/>
 		<ConcealmentModifier add="-2" />
-		<!-- Area2 contains Area1 (should be larger than..). The effects don't stack though. -->
 		<ModifiableParams
 			changeInTime="100"
 			changeOutTime="100"
