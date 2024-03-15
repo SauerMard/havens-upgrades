@@ -13,6 +13,19 @@
 		/>
 	</AttackType>
 
+	<AttackType name="HU_OneTap45">
+		<ModifiableParams
+			minAimTime="200"
+			maxAimTime="200"
+			minShots="1"
+			maxShots="1"
+			resetTime="450"
+			accuracyAdd="0"
+			followupShotAccuracyAdd="5"
+			critChanceAdd="27"
+		/>
+	</AttackType>
+
 	<AttackType name="GP_93R_AutoFire">
 		<ModifiableParams
 			minAimTime="200"

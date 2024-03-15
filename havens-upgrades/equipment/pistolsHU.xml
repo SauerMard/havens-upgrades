@@ -52,8 +52,7 @@
 		/>
 
 		<AttackTypes>
-			<AttackType name="CIA_HKDoubleTap45" rangeMeters="4"/>
-			<AttackType name="CIA_HKControlledPair45" rangeMeters="8"/>
+			<AttackType name="HU_OneTap45" rangeMeters="8"/>
 			<AttackType name="CIA_HKPistolAimedFire45" rangeMeters="15"/>
 			<AttackType name="Rangers_PistolAimedFireLong45" rangeMeters="33"/>
 			<AttackType name="Rangers_PistolAimedFireLong45XX" rangeMeters="9999"/>
@@ -355,8 +354,7 @@
 		/>
 
 		<AttackTypes>
-			<AttackType name="CIA_HKDoubleTap45" rangeMeters="4"/>
-			<AttackType name="CIA_HKControlledPair45" rangeMeters="8"/>
+			<AttackType name="HU_OneTap45" rangeMeters="8"/>
 			<AttackType name="CIA_HKPistolAimedFire45" rangeMeters="15"/>
 			<AttackType name="Rangers_PistolAimedFireLong45" rangeMeters="33"/>
 			<AttackType name="Rangers_PistolAimedFireLong45XX" rangeMeters="9999"/>
