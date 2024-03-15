@@ -10,8 +10,8 @@
 @m93r_name=93R Pistol
 @m93r_desc=An iteration of your regular Beretta 92, capable of three round burst fire at 1100 rounds per minute.
 
-@glock21auto_name=G21 Autopistol
-@glock21auto_desc=.45 ACP at 1200 rounds per minute. I hope you can grip your gun well.
+@glock30_custom_name=G30 Customized
+@glock30_custom_desc=A subcompact Glock 30 in .45 ACP, customized with a compensator, 13 round magazines and, optionally, a red dot sight.
 
 @ammo_22LRHU_name=SG 40gr FMJ
 @ammo_22LRHU_desc=Standard .22LR small game round, 40 grain FMJ
